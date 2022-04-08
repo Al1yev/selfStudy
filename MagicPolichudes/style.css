@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/pexels-pixabay-355465.jpg);
+  background-size: cover;
+  backdrop-filter: brightness(50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: Roboto;
+  padding: 50px 0 100px 0;
+}
+
+.word-table {
+  display: flex;
+  gap: 10px;
+  font-size: 40px;
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+}
+
+.word {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+
+.letter-table {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 40px;
+}
+
+.letter {
+  cursor: pointer;
+}
+
+.letter:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.word-definition {
+  font-size: 28px;
+}
